@@ -561,6 +561,15 @@ class RollingCurl
         return $this->completedRequests;
     }
 
+
+    /**
+     * @return \RollingCurl\Request[]
+     */
+    public function &getActiveRequests()
+    {
+        return $this->activeRequests;
+    }
+
     /**
      * Return the next $limit pending requests (may return an empty array)
      *
